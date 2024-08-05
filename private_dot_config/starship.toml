@@ -8,6 +8,7 @@ $git_status\
 $cmd_duration\
 $line_break\
 $python\
+$kubernetes\
 $character"""
 
 [directory]
@@ -44,3 +45,7 @@ style = "yellow"
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
+
+[kubernetes]
+format = '[$symbol$context( \($namespace\))]($style)'
+disabled = false
