@@ -11,3 +11,5 @@ fzf --fish | source
 zoxide init --cmd=cd fish | source
 
 starship init fish | source
+
+source "$HOME/.cargo/env.fish"
