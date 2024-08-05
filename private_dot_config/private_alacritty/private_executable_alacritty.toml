@@ -1,0 +1,136 @@
+[font]
+size = 13.0
+
+[font.bold]
+family = "DejaVuSansM Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "DejaVuSansM Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "DejaVuSansM Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "DejaVuSansM Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key = "N"
+mods = "Shift|Command"
+
+[[keyboard.bindings]]
+action = "None"
+key = "Q"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "None"
+key = "W"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bd"
+key = "D"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001BD"
+key = "D"
+mods = "Shift|Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Return"
+mods = "Shift|Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bh"
+key = "Left"
+mods = "Alt|Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bj"
+key = "Down"
+mods = "Alt|Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bk"
+key = "Up"
+mods = "Alt|Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bl"
+key = "Right"
+mods = "Alt|Command"
+
+[[keyboard.bindings]]
+chars = "\u001B]"
+key = "LBracket"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001B["
+key = "RBracket"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bz"
+key = "T"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001B1"
+key = "Key1"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001B2"
+key = "Key2"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001B3"
+key = "Key3"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001B4"
+key = "Key4"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001B5"
+key = "Key5"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001B6"
+key = "Key6"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001B7"
+key = "Key7"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001B8"
+key = "Key8"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bc"
+key = "C"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bw"
+key = "W"
+mods = "Command"
+
+[window]
+option_as_alt = "Both"
