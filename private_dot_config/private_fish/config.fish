@@ -1,3 +1,5 @@
+fish_vi_key_bindings
+
 if command -v eza > /dev/null
 	abbr -a l 'eza -la'
 else
