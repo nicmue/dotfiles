@@ -13,6 +13,22 @@ sso_role_name = DeveloperAccess
 region = us-east-1
 output = json
 
+[profile everest-development]
+sso_start_url = https://everest-erp.awsapps.com/start
+sso_region = us-east-1
+sso_account_id = 680189258452
+sso_role_name = DeveloperAccess
+region = us-east-1
+output = json
+
+[profile everest-staging]
+sso_start_url = https://everest-erp.awsapps.com/start
+sso_region = us-east-1
+sso_account_id = 431594990376
+sso_role_name = DeveloperAccess
+region = us-east-1
+output = json
+
 [profile everest-production]
 sso_start_url = https://everest-erp.awsapps.com/start
 sso_account_id = 682440956322
