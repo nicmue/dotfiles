@@ -6,8 +6,13 @@ else
 	abbr -a l 'ls -la'
 end
 
+# zellij
 abbr -a za 'zellij attach -c'
 abbr -a zam 'zellij attach -c main'
+
+# git
+abbr -a gwip 'git add -A; git commit --no-verify --no-edit -m "wip"'
+abbr -a gundo 'git reset HEAD^'
 
 fzf --fish | source
 zoxide init --cmd=cd fish | source
