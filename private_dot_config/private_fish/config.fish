@@ -16,4 +16,13 @@ zoxide init --cmd=cd fish | source
 
 starship init fish | source
 
+direnv hook fish | source
+
 source "$HOME/.cargo/env.fish"
+
+# various
+abbr -a uuidv4 "uuidgen | tr '[:upper:]' '[:lower:]'"
+
+# everest
+abbr -a docker-login "~/.config/scripts/everest/docker-login.bash"
+abbr -a aws-login "~/.config/scripts/everest/aws-login.bash"
