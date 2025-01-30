@@ -25,5 +25,6 @@ abbr -a uuidv4 "uuidgen | tr '[:upper:]' '[:lower:]'"
 
 # everest
 abbr -a --set-cursor envexec "direnv exec ~/.config/scripts/everest/direnv/%"
+abbr -a envlogin '~/.config/scripts/everest/env-login.bash'
 abbr -a docker-login "~/.config/scripts/everest/docker-login.bash"
 abbr -a aws-login "~/.config/scripts/everest/aws-login.bash"
