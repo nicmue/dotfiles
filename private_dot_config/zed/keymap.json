@@ -14,8 +14,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-a": "assistant::ToggleFocus",
-      "cmd-shift-g": "git_panel::ToggleFocus"
+      "cmd-shift-a": "assistant::ToggleFocus"
     }
   },
   {
