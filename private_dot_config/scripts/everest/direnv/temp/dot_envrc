@@ -1,9 +1,0 @@
-#!/bin/bash
-
-export PGHOST=tenant-2fc057be-8c0e-4711-a796-abecf44e391d.cluster-cqim8xet1dbv.us-east-1.rds.amazonaws.com
-export PGUSER=postgres_rw_1744088633
-
-export PGDATABASE=$(echo $PGHOST | cut -d '.' -f 1)
-export PGPASSWORD='I3*u_hFdyVLbRtKyeF8fgP0-7:u?r5d%'
-
-source ${BASH_SOURCE%/*}/../kernel.bash
