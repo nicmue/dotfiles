@@ -4,8 +4,8 @@ export AWS_PROFILE=everest-internal
 export TENANT=tenant-8b68e473-5988-4c03-ab6c-633198385d6a
 export USER=kernel_ro
 
-source ${BASH_SOURCE%/*}/../aws-login.bash $AWS_PROFILE
-source ${BASH_SOURCE%/*}/aws-pghost.bash $AWS_PROFILE $TENANT
+source ${BASH_SOURCE%/*}/../../aws-login.bash $AWS_PROFILE
+source ${BASH_SOURCE%/*}/../aws-pghost.bash $AWS_PROFILE $TENANT
 
 export PGUSER=$USER
 export PGDATABASE=$TENANT
