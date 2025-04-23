@@ -1,12 +1,8 @@
 #!/bin/bash
 
-export AWS_PROFILE=everest-internal
-export TENANT=tenant-8b68e473-5988-4c03-ab6c-633198385d6a
-export USER=kernel_ro
-
-export PGHOST=tenant-8b68e473-5988-4c03-ab6c-633198385d6a-1744815013.cluster-cqim8xet1dbv.us-east-1.rds.amazonaws.com
-export PGUSER=$USER
-export PGDATABASE=$TENANT
+export PGHOST=tenant-8b68e473-5988-4c03-ab6c-633198385d6a-1745299041.cluster-cqim8xet1dbv.us-east-1.rds.amazonaws.com
+export PGDATABASE=tenant-8b68e473-5988-4c03-ab6c-633198385d6a
+export PGUSER=kernel
 
 source ${BASH_SOURCE%/*}/../secrets/kernel-pw.bash
 source ${BASH_SOURCE%/*}/../kernel.bash

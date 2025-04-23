@@ -103,9 +103,7 @@
         "cargo": {
           "features": "all"
         },
-        "checkOnSave": {
-          "command": "clippy"
-        },
+        "checkOnSave": true,
         "inlayHints": {
           "maxLength": 25,
           "lifetimeElisionHints": {
@@ -119,5 +117,15 @@
         }
       }
     }
-  }
+  },
+  "file_scan_exclusions": [
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings"
+  ]
 }
