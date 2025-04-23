@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export AWS_PROFILE=everest-production
+export TENANT=tenant-a9f09492-378e-4a4e-8569-60695dc7e0c9
+export USER=nico@everest-erp.com
+
+source ${BASH_SOURCE%/*}/../iam.bash
