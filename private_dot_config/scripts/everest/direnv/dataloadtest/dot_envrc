@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export AWS_PROFILE=everest-internal
-export TENANT=tenant-fe49af35-477c-480e-9f6e-a6be8228b76a
+export TENANT=tenant-b64877cf-78cd-4715-8395-0f12c93e9b34
 export USER=kernel_ro
 
 source ${BASH_SOURCE%/*}/../../aws-login.bash $AWS_PROFILE
