@@ -104,6 +104,9 @@
           "features": "all"
         },
         "checkOnSave": true,
+        "check": {
+          "command": "clippy" // rust-analyzer.check.command (default: "check")
+        },
         "inlayHints": {
           "maxLength": 25,
           "lifetimeElisionHints": {
