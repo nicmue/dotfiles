@@ -1,3 +1,5 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 fish_vi_key_bindings
 
 if command -v eza > /dev/null
@@ -24,14 +26,12 @@ source "$HOME/.cargo/env.fish"
 abbr -a uuidv4 "uuidgen | tr '[:upper:]' '[:lower:]'"
 
 # everest
-abbr -a envexec "~/.config/scripts/everest/env-exec.bash"
-abbr -a envlogin '~/.config/scripts/everest/env-login.bash'
-abbr -a docker-login "~/.config/scripts/everest/docker-login.bash"
-abbr -a aws-login "~/.config/scripts/everest/aws-login.bash"
+alias envexec "~/.config/scripts/everest/env-exec.bash"
+alias envlogin '~/.config/scripts/everest/env-login.bash'
+alias docker-login "~/.config/scripts/everest/docker-login.bash"
+alias aws-login "~/.config/scripts/everest/aws-login.bash"
 abbr -a aws-profiles "aws configure list-profiles"
 
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init.fish 2>/dev/null || :
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
