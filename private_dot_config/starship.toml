@@ -3,6 +3,7 @@ $username\
 $hostname\
 $directory\
 $git_branch\
+$git_commit\
 $git_state\
 $git_status\
 $cmd_duration\
@@ -14,13 +15,17 @@ $character"""
 [directory]
 style = "blue"
 
-[character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
-
 [git_branch]
 format = "[$branch]($style)"
+style = "bright-black"
+
+[git_commit]
+commit_hash_length = 7
+tag_symbol = '+'
+tag_disabled = false
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
 style = "bright-black"
 
 [git_status]
@@ -34,10 +39,6 @@ renamed = "​"
 deleted = "​"
 stashed = "≡"
 
-[git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
-
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
@@ -49,3 +50,8 @@ style = "bright-black"
 [kubernetes]
 format = '[$symbol$context( \($namespace\))]($style)'
 disabled = false
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"

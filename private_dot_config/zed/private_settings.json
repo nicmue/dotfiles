@@ -13,15 +13,20 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_assistant": false
+    "enabled_in_text_threads": false
   },
   "features": {
     "edit_prediction_provider": "zed"
   },
-  "assistant": {
+  "minimap": { "show": "never" },
+  "indent_guides": {
+    "coloring": "indent_aware"
+  },
+  "agent": {
+    "default_profile": "ask",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-latest"
     },
     "version": "2"
   },

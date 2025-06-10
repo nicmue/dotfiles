@@ -30,6 +30,7 @@ alias envexec "~/.config/scripts/everest/env-exec.bash"
 alias envlogin '~/.config/scripts/everest/env-login.bash'
 alias docker-login "~/.config/scripts/everest/docker-login.bash"
 alias aws-login "~/.config/scripts/everest/aws-login.bash"
+alias kubectl-prepare "~/.config/scripts/everest/kubectl-prepare.bash"
 abbr -a aws-profiles "aws configure list-profiles"
 
 # Added by OrbStack: command-line tools and integration

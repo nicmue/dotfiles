@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PGHOST=tenant-8b68e473-5988-4c03-ab6c-633198385d6a-1747135251.cluster-cqim8xet1dbv.us-east-1.rds.amazonaws.com
+export PGHOST=tenant-8b68e473-5988-4c03-ab6c-633198385d6a-1749542970.cluster-cqim8xet1dbv.us-east-1.rds.amazonaws.com
 export PGDATABASE=tenant-8b68e473-5988-4c03-ab6c-633198385d6a
 export PGUSER=postgres_rw
 
