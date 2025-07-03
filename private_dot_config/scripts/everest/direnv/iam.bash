@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [ "$#" -ne 0 ]; then
-    printf 'ERROR! You must not provide any arguments!\n' >&2
-    exit 1
-fi
+# if [ "$#" -ne 0 ]; then
+#     printf 'ERROR! You must not provide any arguments!\n' >&2
+#     exit 1
+# fi
 
 export PGUSER=$USER
 export PGDATABASE=$TENANT

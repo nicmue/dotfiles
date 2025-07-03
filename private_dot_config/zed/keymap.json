@@ -1,20 +1,32 @@
 [
   {
     "bindings": {
-      // "ctrl-shift-tab": "pane::ActivatePrevItem",
-      // "ctrl-tab": "pane::ActivateNextItem",
-      "ctrl-cmd-up": "pane::SplitUp",
-      "ctrl-cmd-right": "pane::SplitRight",
-      "ctrl-cmd-left": "pane::SplitLeft",
-      "ctrl-cmd-down": "pane::SplitDown",
-      "alt-cmd-right": "workspace::ActivateNextPane",
-      "alt-cmd-left": "workspace::ActivatePreviousPane"
+      "ctrl-cmd-up": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "up" }
+      ],
+      "ctrl-cmd-down": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "down" }
+      ],
+      "ctrl-cmd-right": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "right" }
+      ],
+      "ctrl-cmd-left": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "left" }
+      ],
+      "alt-cmd-up": "workspace::ActivatePaneUp",
+      "alt-cmd-down": "workspace::ActivatePaneDown",
+      "alt-cmd-right": "workspace::ActivatePaneRight",
+      "alt-cmd-left": "workspace::ActivatePaneLeft"
     }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-a": "assistant::ToggleFocus"
+      "cmd-shift-a": "agent::ToggleFocus"
     }
   },
   {
@@ -34,7 +46,8 @@
   {
     "context": "vim_operator == a || vim_operator == i || vim_operator == cs",
     "bindings": {
-      "b": "vim::AnyBrackets"
+      "b": "vim::AnyBrackets",
+      "q": "vim::AnyQuotes"
     }
   },
   {
