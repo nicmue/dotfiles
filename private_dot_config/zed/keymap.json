@@ -31,12 +31,14 @@
   },
   {
     "context": "Editor",
+    "use_key_equivalents": true,
     "bindings": {
       "alt-up": "editor::MoveLineUp",
-      "alt-down": "editor::MoveLineDown"
+      "alt-down": "editor::MoveLineDown",
+      "cmd-alt-up": "editor::AddSelectionAbove",
+      "cmd-alt-down": "editor::AddSelectionBelow"
     }
   },
-
   {
     "context": "Editor && mode == full",
     "bindings": {
@@ -80,6 +82,25 @@
     "context": "vim_mode == literal",
     "bindings": {
       "tab": ["vim::Literal", ["tab", "\u0009"]]
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "f": ["vim::PushFindForward", { "before": false, "multiline": true }],
+      "t": ["vim::PushFindForward", { "before": true, "multiline": true }],
+      "shift-f": [
+        "vim::PushFindBackward",
+        { "after": false, "multiline": true }
+      ],
+      "shift-t": ["vim::PushFindBackward", { "after": true, "multiline": true }]
+    }
+  },
+  {
+    "context": "vim_operator == a || vim_operator == i || vim_operator == cs",
+    "bindings": {
+      "t": "vim::Tag",
+      "f": "vim::Method"
     }
   }
   // {

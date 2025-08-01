@@ -12,6 +12,7 @@ end
 abbr -a za 'zellij attach -c'
 abbr -a zam 'zellij attach -c main'
 
+set --universal nvm_default_version 22
 
 fzf --fish | source
 zoxide init --cmd=cd fish | source

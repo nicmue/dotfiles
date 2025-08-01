@@ -165,7 +165,8 @@ keybinds clear-defaults=true {
     }
     shared_except "locked" "entersearch" "renametab" "renamepane" "prompt" "tmux" {
         bind "Alt g" { SwitchToMode "locked"; }
-        bind "Alt q" { Quit; }
+        // bind "Alt q" { Quit; }
+        bind "Alt q" { Detach; }
     }
     shared_except "locked" "entersearch" "renametab" "renamepane" "session" "prompt" "tmux" {
         bind "Alt o" { SwitchToMode "session"; }
