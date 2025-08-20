@@ -37,3 +37,8 @@ abbr -a aws-profiles "aws configure list-profiles"
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init.fish 2>/dev/null || :
+
+if not contains "$HOME/.local/bin" $PATH
+    # Prepending path in case a system-installed rustc needs to be overridden
+    set -x PATH "$HOME/.local/bin" $PATH
+end
