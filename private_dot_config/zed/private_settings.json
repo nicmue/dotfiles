@@ -122,6 +122,9 @@
         "check": {
           "command": "clippy" // rust-analyzer.check.command (default: "check")
         },
+        "rustfmt": {
+          "extraArgs": ["+nightly"]
+        },
         "inlayHints": {
           "maxLength": 25,
           "lifetimeElisionHints": {
