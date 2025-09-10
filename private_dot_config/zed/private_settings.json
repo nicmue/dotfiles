@@ -16,7 +16,7 @@
     "enabled_in_text_threads": false
   },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "zed"
   },
   "minimap": { "show": "never" },
   "indent_guides": {
@@ -75,7 +75,7 @@
     "auto_fold_dirs": true
   },
   "outline_panel": {
-    "dock": "right",
+    "dock": "left",
     "default_width": 240
   },
   "languages": {
