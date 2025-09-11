@@ -42,5 +42,3 @@ if not contains "$HOME/.local/bin" $PATH
     # Prepending path in case a system-installed rustc needs to be overridden
     set -x PATH "$HOME/.local/bin" $PATH
 end
-
-set -x EDITOR "/usr/local/bin/zed"
