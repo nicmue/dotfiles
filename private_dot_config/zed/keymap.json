@@ -3,31 +3,31 @@
     "bindings": {
       "ctrl-cmd-up": [
         "workspace::MoveItemToPaneInDirection",
-        { "direction": "up" }
+        { "direction": "up" },
       ],
       "ctrl-cmd-down": [
         "workspace::MoveItemToPaneInDirection",
-        { "direction": "down" }
+        { "direction": "down" },
       ],
       "ctrl-cmd-right": [
         "workspace::MoveItemToPaneInDirection",
-        { "direction": "right" }
+        { "direction": "right" },
       ],
       "ctrl-cmd-left": [
         "workspace::MoveItemToPaneInDirection",
-        { "direction": "left" }
+        { "direction": "left" },
       ],
       "alt-cmd-up": "workspace::ActivatePaneUp",
       "alt-cmd-down": "workspace::ActivatePaneDown",
       "alt-cmd-right": "workspace::ActivatePaneRight",
-      "alt-cmd-left": "workspace::ActivatePaneLeft"
-    }
+      "alt-cmd-left": "workspace::ActivatePaneLeft",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-a": "agent::ToggleFocus"
-    }
+      "cmd-shift-a": "agent::ToggleFocus",
+    },
   },
   {
     "context": "Editor",
@@ -36,53 +36,53 @@
       "alt-up": "editor::MoveLineUp",
       "alt-down": "editor::MoveLineDown",
       "cmd-alt-up": "editor::AddSelectionAbove",
-      "cmd-alt-down": "editor::AddSelectionBelow"
-    }
+      "cmd-alt-down": "editor::AddSelectionBelow",
+    },
   },
   {
     "context": "Editor && mode == full",
     "bindings": {
-      "shift-enter": ["editor::ExpandExcerpts", { "lines": 20 }]
-    }
+      "shift-enter": ["editor::ExpandExcerpts", { "lines": 20 }],
+    },
   },
   {
     "context": "vim_operator == a || vim_operator == i || vim_operator == cs",
     "bindings": {
       "b": "vim::AnyBrackets",
-      "q": "vim::AnyQuotes"
-    }
+      "q": "vim::AnyQuotes",
+    },
   },
   {
     "context": "Editor && edit_prediction",
     "bindings": {
-      "alt-tab": "editor::AcceptEditPrediction"
-    }
+      "alt-tab": "editor::AcceptEditPrediction",
+    },
   },
   // Bind `tab` back to its original behavior.
   {
     "context": "Editor",
     "bindings": {
-      "tab": "editor::Tab"
-    }
+      "tab": "editor::Tab",
+    },
   },
   {
     "context": "Editor && showing_completions",
     "bindings": {
-      "tab": "editor::ComposeCompletion"
-    }
+      "tab": "editor::ComposeCompletion",
+    },
   },
   {
     "context": "(VimControl && !menu) || vim_mode == replace || vim_mode == waiting",
     "bindings": {
       "tab": "editor::Indent",
-      "shift-tab": "editor::Outdent"
-    }
+      "shift-tab": "editor::Outdent",
+    },
   },
   {
     "context": "vim_mode == literal",
     "bindings": {
-      "tab": ["vim::Literal", ["tab", "\u0009"]]
-    }
+      "tab": ["vim::Literal", ["tab", "\u0009"]],
+    },
   },
   {
     "context": "VimControl && !menu",
@@ -91,18 +91,48 @@
       "t": ["vim::PushFindForward", { "before": true, "multiline": true }],
       "shift-f": [
         "vim::PushFindBackward",
-        { "after": false, "multiline": true }
+        { "after": false, "multiline": true },
       ],
-      "shift-t": ["vim::PushFindBackward", { "after": true, "multiline": true }]
-    }
+      "shift-t": [
+        "vim::PushFindBackward",
+        { "after": true, "multiline": true },
+      ],
+    },
   },
   {
     "context": "vim_operator == a || vim_operator == i || vim_operator == cs",
     "bindings": {
       "t": "vim::Tag",
-      "f": "vim::Method"
-    }
-  }
+      "f": "vim::Method",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      "Enter": "vim::ReplayLastRecording",
+    },
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "\\ d": ["workspace::SendKeystrokes", "\" a s dbg!( ctrl-r a ) escape"],
+    },
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "\\ d": ["workspace::SendKeystrokes", "v a a \" a y g v [ x [ x \" a p"],
+    },
+  },
+  {
+    "bindings": {
+      "cmd-p": [
+        // Or `ctrl-p`
+        "task::Spawn",
+        { "task_name": "Television File Finder", "reveal_target": "center" },
+      ],
+    },
+  },
   // {
   //   "context": "vim_mode == normal || vim_mode == visual",
   //   "bindings": {
