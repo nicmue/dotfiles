@@ -53,7 +53,7 @@
   },
   {
     "label": "Television File Finder",
-    "command": "zed \"$(tv files)\"",
+    "command": "zed \"$(tv zed)\"",
     "hide": "always",
     "allow_concurrent_runs": true,
     "use_new_terminal": true,
