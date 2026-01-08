@@ -1,7 +1,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 fish_vi_key_bindings
-set -p fish_function_path ~/.config/fish/my_functions
+set -p fish_function_path
 
 if command -v eza > /dev/null
 	abbr -a l 'eza -la'
@@ -26,6 +26,10 @@ source "$HOME/.cargo/env.fish"
 
 # various
 abbr -a uuidv4 "uuidgen | tr '[:upper:]' '[:lower:]'"
+
+# docker
+abbr -a dcu 'docker compose up -d'
+abbr -a dcd 'docker compose down'
 
 # everest
 alias envexec "~/.config/scripts/everest/env-exec.bash"
