@@ -1,6 +1,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 fish_vi_key_bindings
+set -p fish_function_path ~/.config/fish/my_functions
 
 if command -v eza > /dev/null
 	abbr -a l 'eza -la'
