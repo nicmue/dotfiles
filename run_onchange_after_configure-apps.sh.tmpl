@@ -1,22 +1,22 @@
 #!/bin/bash
 
-# Alt-Tab: {{ include "com.lwouis.alt-tab-macos-settings.xml" | sha256sum }}
-# NextApp: {{ if (stat "com.example.nextapp-settings.xml") }}{{ include "com.example.nextapp-settings.xml" | sha256sum }}{{ end }}
+# Alt-Tab hash: {{ include "com.lwouis.alt-tab-macos.xml" | sha256sum }}
+# Add more hashes here as you add apps
 
-set -e
+echo "──────────────────────────────────────────────────"
+echo "🛠️  Applying App Configurations"
+echo "──────────────────────────────────────────────────"
 
-function sync_app() {
-    local domain=$1
-    local xml_file="{{ .chezmoi.sourceDir }}/${domain}-settings.xml"
-    
-    if [ -f "$xml_file" ]; then
-        echo "Syncing $domain..."
-        defaults import "$domain" "$xml_file"
-        killall "$2" 2>/dev/null || true
-        open -a "$2"
-    fi
-}
+# --- ALT-TAB ---
+echo "👉 Syncing Alt-Tab..."
+defaults import com.lwouis.alt-tab-macos "{{ .chezmoi.sourceDir }}/com.lwouis.alt-tab-macos.xml"
+killall AltTab 2>/dev/null || true
+open -a AltTab
 
-# --- Add your apps here ---
-sync_app "com.lwouis.alt-tab-macos" "AltTab"
-# sync_app "com.example.nextapp" "NextApp"
+# --- ADD NEXT APP HERE ---
+# echo "👉 Syncing Rectangle..."
+# defaults import com.knollsoft.Rectangle "{{ .chezmoi.sourceDir }}/com.knollsoft.Rectangle-settings.xml"
+# killall Rectangle 2>/dev/null || true
+# open -a Rectangle
+
+echo "✨ All configurations applied!"
