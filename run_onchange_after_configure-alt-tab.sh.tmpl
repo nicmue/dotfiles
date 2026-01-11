@@ -7,5 +7,7 @@ echo "Applying Alt-Tab configurations..."
 # Import the settings
 defaults import com.lwouis.alt-tab-macos "$HOME/Library/Preferences/com.lwouis.alt-tab-macos.plist"
 
-# Restart the app
-killall AltTab 2>/dev/null && open -a AltTab
+# Restart the app safely
+killall AltTab 2>/dev/null || true
+open -a AltTab
+
