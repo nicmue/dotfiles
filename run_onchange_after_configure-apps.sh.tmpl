@@ -8,13 +8,13 @@ echo "🛠️  Applying App Configurations"
 echo "──────────────────────────────────────────────────"
 
 echo "👉 Syncing AltTab..."
-defaults import com.lwouis.alt-tab-macos "{{ .chezmoi.sourceDir }}/com.lwouis.alt-tab-macos.xml"
 killall AltTab 2>/dev/null || true
+defaults import com.lwouis.alt-tab-macos "{{ .chezmoi.sourceDir }}/com.lwouis.alt-tab-macos.xml"
 open -a AltTab
 
 echo "👉 Syncing Rectangle..."
-defaults import com.knollsoft.Rectangle "{{ .chezmoi.sourceDir }}/com.knollsoft.Rectangle.xml"
 killall Rectangle 2>/dev/null || true
+defaults import com.knollsoft.Rectangle "{{ .chezmoi.sourceDir }}/com.knollsoft.Rectangle.xml"
 open -a Rectangle
 
 echo "✨ All configurations applied!"
