@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# .plist hash: {{ include "private_Library/private_Preferences/private_com.lwouis.alt-tab-macos.plist" | sha256sum }}
+# Settings hash: {{ include "alt-tab-settings.xml" | sha256sum }}
 
-echo "Applying Alt-Tab configurations..."
+echo "Syncing Alt-Tab settings from dotfiles..."
 
-# Import the settings
-defaults import com.lwouis.alt-tab-macos "$HOME/Library/Preferences/com.lwouis.alt-tab-macos.plist"
+# Import your clean XML into the macOS defaults system
+defaults import com.lwouis.alt-tab-macos "{{ .chezmoi.sourceDir }}/alt-tab-settings.xml"
 
-# Restart the app safely
+# Restart the app to apply
 killall AltTab 2>/dev/null || true
 open -a AltTab
 

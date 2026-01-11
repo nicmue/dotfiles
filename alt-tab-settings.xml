@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MSAppCenter310AppCenterUserDefaultsMigratedKey</key>
+	<true/>
+	<key>MSAppCenter310CrashesUserDefaultsMigratedKey</key>
+	<true/>
+	<key>MSAppCenterInstallId</key>
+	<string>657C9591-B40C-4E02-A5E5-5E2C734AFD6E</string>
+	<key>MSAppCenterNetworkRequestsAllowed</key>
+	<false/>
+	<key>MSAppCenterPastDevices</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBULDBIYHCJQUVJTVFVWV1hZ
+	WltcYWZVJG51bGzSDQ4PEVpOUy5vYmplY3RzViRjbGFzc6EQgAKAFNMTFA4VFhdcdGlt
+	ZXN0YW1wS2V5WWRldmljZUtleYADgAWAE9IZDhobV05TLnRpbWUjQceJ5xbgaSeABNId
+	Hh8gWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNEYXRloh8hWE5TT2JqZWN03xAXIyQlJg4n
+	KCkqKywtLi8wMTIzNDU2Nzg5Ojs8PTs8PEFCPDw8PEdISUo8PE1OT1lvc1ZlcnNpb25e
+	dGltZVpvbmVPZmZzZXRYYXBwQnVpbGRfEBVsaXZlVXBkYXRlUGFja2FnZUhhc2haYXBw
+	VmVyc2lvbl8QEXdyYXBwZXJTZGtWZXJzaW9uW2NhcnJpZXJOYW1lV3Nka05hbWVWbG9j
+	YWxlXxAXbGl2ZVVwZGF0ZURlcGxveW1lbnRLZXleY2FycmllckNvdW50cnlab3NBcGlM
+	ZXZlbF53cmFwcGVyU2RrTmFtZVdvZW1OYW1lWnNka1ZlcnNpb25cYXBwTmFtZXNwYWNl
+	VW1vZGVsXxAVd3JhcHBlclJ1bnRpbWVWZXJzaW9uXxAWbGl2ZVVwZGF0ZVJlbGVhc2VM
+	YWJlbFpzY3JlZW5TaXplVm9zTmFtZVdvc0J1aWxkgAuADoAQgACAEoAQgACAAIAGgA2A
+	AIAAgACAAIAJgAeAEYAIgACAAIAPgAqADF8QD2FwcGNlbnRlci5tYWNvc1U0LjMuMF5N
+	YWNCb29rUHJvMTgsM1VBcHBsZVVtYWNPU1YyNi4yLjBVMjVDNTZVZW5fVVMQPFgxNTEy
+	eDk4MlU4LjAuMF8QGGNvbS5sd291aXMuYWx0LXRhYi1tYWNvc9IdHl1eWk1TQUNEZXZp
+	Y2WjX2AhWk1TQUNEZXZpY2VeTVNBQ1dyYXBwZXJTZGvSHR5iY18QFU1TQUNEZXZpY2VI
+	aXN0b3J5SW5mb6NkZSFfEBVNU0FDRGV2aWNlSGlzdG9yeUluZm9fEA9NU0FDSGlzdG9y
+	eUluZm/SHR5naF5OU011dGFibGVBcnJheaNnaSFXTlNBcnJheQAIABEAGgAkACkAMgA3
+	AEkATABRAFMAawBxAHYAgQCIAIoAjACOAJUAogCsAK4AsACyALcAvwDIAMoAzwDaAOMA
+	6gDtAPYBJwExAUABSQFhAWwBgAGMAZQBmwG1AcQBzwHeAeYB8QH+AgQCHAI1AkACRwJP
+	AlECUwJVAlcCWQJbAl0CXwJhAmMCZQJnAmkCawJtAm8CcQJzAnUCdwJ5AnsCfQKPApUC
+	pAKqArACtwK9AsMCxQLOAtQC7wL0Av8DAwMOAx0DIgM6Az4DVgNoA20DfAOAAAAAAAAA
+	AgEAAAAAAAAAagAAAAAAAAAAAAAAAAAAA4g=
+	</data>
+	<key>MSAppCenterSessionIdHistory</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
+	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
+	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBx4nnFt9Je4AE0h0eHyBaJGNsYXNzbmFt
+	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
+	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
+	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
+	SQBMAFEAUwBbAGEAZgBxAHgAegB8AH4AhQCSAJ8AoQCjAKUAqgCyALsAvQDCAM0A1gDd
+	AOAA6QDuAQcBCwEkATYBOwFKAU4AAAAAAAACAQAAAAAAAAArAAAAAAAAAAAAAAAAAAAB
+	Vg==
+	</data>
+	<key>MSAppCenterUserIdHistory</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
+	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlZdXNlcklk
+	S2V5gAOAAIAF0hkOGhtXTlMudGltZSNBx4nnFt9UO4AE0h0eHyBaJGNsYXNzbmFtZVgk
+	Y2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFU1TQUNVc2VySWRIaXN0b3J5
+	SW5mb6MlJiFfEBVNU0FDVXNlcklkSGlzdG9yeUluZm9fEA9NU0FDSGlzdG9yeUluZm/S
+	HR4oKV5OU011dGFibGVBcnJheaMoKiFXTlNBcnJheQAIABEAGgAkACkAMgA3AEkATABR
+	AFMAWwBhAGYAcQB4AHoAfAB+AIUAkgCcAJ4AoACiAKcArwC4ALoAvwDKANMA2gDdAOYA
+	6wEDAQcBHwExATYBRQFJAAAAAAAAAgEAAAAAAAAAKwAAAAAAAAAAAAAAAAAAAVE=
+	</data>
+	<key>NSStatusItem VisibleCC Item-0</key>
+	<false/>
+	<key>NSWindow Frame NSSpellCheckerSpellingPanel</key>
+	<string>496 477 431 262 0 0 1728 1083 </string>
+	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
+	<string>692 403 348 141 0 0 1728 1083 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>1304 1140 400 139 0 0 3008 1661 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>1194 947 620 398 0 0 3008 1661 </string>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2026-01-07T08:24:29Z</date>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>2336229898</integer>
+	<key>SUUpdateRelaunchingMarker</key>
+	<false/>
+	<key>appearanceSize</key>
+	<string>1</string>
+	<key>appearanceStyle</key>
+	<string>0</string>
+	<key>appsToShow</key>
+	<string>1</string>
+	<key>holdShortcut</key>
+	<string>⌥⌘</string>
+	<key>holdShortcut2</key>
+	<string>⌘</string>
+	<key>menubarIconShown</key>
+	<string>false</string>
+	<key>preferencesVersion</key>
+	<string>8.0.0</string>
+	<key>screenRecordingPermissionSkipped</key>
+	<string>true</string>
+	<key>shortcutStyle3</key>
+	<string>0</string>
+	<key>showMinimizedWindows</key>
+	<string>1</string>
+	<key>showMinimizedWindows2</key>
+	<string>1</string>
+	<key>updatePolicy</key>
+	<string>1</string>
+</dict>
+</plist>
