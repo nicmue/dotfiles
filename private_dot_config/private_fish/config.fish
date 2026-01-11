@@ -1,7 +1,11 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 fish_vi_key_bindings
-set -p fish_function_path ~/.config/fish/my_functions
+
+set -p fish_function_path ~/.config/fish/myfunctions
+for file in ~/.config/fish/myconf.d/*.fish
+    source $file
+end
 
 if command -v eza > /dev/null
 	abbr -a l 'eza -la'
