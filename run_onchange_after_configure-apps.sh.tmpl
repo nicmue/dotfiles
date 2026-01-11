@@ -13,10 +13,10 @@ defaults import com.lwouis.alt-tab-macos "{{ .chezmoi.sourceDir }}/com.lwouis.al
 killall AltTab 2>/dev/null || true
 open -a AltTab
 
-# --- ADD NEXT APP HERE ---
-# echo "👉 Syncing Rectangle..."
-# defaults import com.knollsoft.Rectangle "{{ .chezmoi.sourceDir }}/com.knollsoft.Rectangle-settings.xml"
-# killall Rectangle 2>/dev/null || true
-# open -a Rectangle
+--- ADD NEXT APP HERE ---
+echo "👉 Syncing Rectangle..."
+defaults import com.knollsoft.Rectangle "{{ .chezmoi.sourceDir }}/com.knollsoft.Rectangle.xml"
+killall Rectangle 2>/dev/null || true
+open -a Rectangle
 
 echo "✨ All configurations applied!"
