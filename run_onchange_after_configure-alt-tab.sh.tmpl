@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# .plist hash: {{ include "dot_Library/Preferences/com.lwouis.alt-tab-macos.plist" | sha256sum }}
+
+echo "Applying Alt-Tab configurations..."
+
+# Import the settings
+defaults import com.lwouis.alt-tab-macos "$HOME/Library/Preferences/com.lwouis.alt-tab-macos.plist"
+
+# Restart the app
+killall AltTab 2>/dev/null; and open -a AltTab
