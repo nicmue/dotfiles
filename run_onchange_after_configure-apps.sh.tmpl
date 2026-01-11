@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Alt-Tab: {{ include "com.lwouis.alt-tab-macos-settings.xml" | sha256sum }}
+# NextApp: {{ if (stat "com.example.nextapp-settings.xml") }}{{ include "com.example.nextapp-settings.xml" | sha256sum }}{{ end }}
+
+set -e
+
+function sync_app() {
+    local domain=$1
+    local xml_file="{{ .chezmoi.sourceDir }}/${domain}-settings.xml"
+    
+    if [ -f "$xml_file" ]; then
+        echo "Syncing $domain..."
+        defaults import "$domain" "$xml_file"
+        killall "$2" 2>/dev/null || true
+        open -a "$2"
+    fi
+}
+
+# --- Add your apps here ---
+sync_app "com.lwouis.alt-tab-macos" "AltTab"
+# sync_app "com.example.nextapp" "NextApp"
