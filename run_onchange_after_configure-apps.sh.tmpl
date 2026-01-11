@@ -1,19 +1,17 @@
 #!/bin/bash
 
-# Alt-Tab hash: {{ include "com.lwouis.alt-tab-macos.xml" | sha256sum }}
-# Add more hashes here as you add apps
+# AltTab hash: {{ include "com.lwouis.alt-tab-macos.xml" | sha256sum }}
+# Rectangle hash: {{ include "com.knollsoft.Rectangle.xml" | sha256sum }}
 
 echo "──────────────────────────────────────────────────"
 echo "🛠️  Applying App Configurations"
 echo "──────────────────────────────────────────────────"
 
-# --- ALT-TAB ---
-echo "👉 Syncing Alt-Tab..."
+echo "👉 Syncing AltTab..."
 defaults import com.lwouis.alt-tab-macos "{{ .chezmoi.sourceDir }}/com.lwouis.alt-tab-macos.xml"
 killall AltTab 2>/dev/null || true
 open -a AltTab
 
---- ADD NEXT APP HERE ---
 echo "👉 Syncing Rectangle..."
 defaults import com.knollsoft.Rectangle "{{ .chezmoi.sourceDir }}/com.knollsoft.Rectangle.xml"
 killall Rectangle 2>/dev/null || true
