@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "document_symbols": "on",
+  "hover_popover_enabled": true,
+  "hover_popover_delay": 1000,
   "git_panel": {
     "dock": "right",
     "tree_view": true,
@@ -19,6 +22,7 @@
     "enabled": true,
   },
   "edit_predictions": {
+    "provider": "zed",
     "mode": "subtle",
     "copilot": {
       "proxy": null,
@@ -26,18 +30,25 @@
     },
     "enabled_in_text_threads": false,
   },
-  "features": {
-    "edit_prediction_provider": "zed",
-  },
   "minimap": { "show": "never" },
   "indent_guides": {
     "coloring": "indent_aware",
   },
   "agent": {
+    "tool_permissions": {
+      "tools": {
+        "web_search": {
+          "default": "allow"
+        },
+        "fetch": {
+          "default": "allow"
+        }
+      }
+    },
     "default_profile": "ask",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gemini-3-pro-preview",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-latest",
     },
   },
   "language_models": {
@@ -57,7 +68,6 @@
   "vertical_scroll_margin": 8,
   "relative_line_numbers": "enabled",
   "soft_wrap": "none",
-  "auto_signature_help": true,
   "show_signature_help_after_edits": false,
   "vim_mode": true,
   "vim": {
