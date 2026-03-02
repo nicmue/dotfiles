@@ -28,13 +28,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 762 620 398 0 0 2560 1415 </string>
 	<key>NSWindow Frame SUUpdateAlert2</key>
-	<string>589 511 549 402 0 0 1728 1084 </string>
+	<string>481 410 550 402 0 0 1512 949 </string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2026-01-11T09:20:14Z</date>
+	<date>2026-02-26T16:13:38Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>3773656959</integer>
 	<key>allowAnyShortcut</key>
@@ -99,6 +99,8 @@
 	<integer>0</integer>
 	<key>ignoredSnapAreas</key>
 	<integer>0</integer>
+	<key>installVersion</key>
+	<string>99</string>
 	<key>internalTilingNotified</key>
 	<true/>
 	<key>larger</key>
