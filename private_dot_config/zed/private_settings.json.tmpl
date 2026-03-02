@@ -7,6 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+{{- if eq .machine_type "private" }}
+{{- else }}
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "disable_ai": true,
+{{- end }}
   "document_symbols": "on",
   "hover_popover_enabled": true,
   "hover_popover_delay": 1000,
@@ -38,12 +46,12 @@
     "tool_permissions": {
       "tools": {
         "web_search": {
-          "default": "allow"
+          "default": "allow",
         },
         "fetch": {
-          "default": "allow"
-        }
-      }
+          "default": "allow",
+        },
+      },
     },
     "default_profile": "ask",
     "default_model": {
