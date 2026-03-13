@@ -26,6 +26,7 @@ starship init fish | source
 
 direnv hook fish | source
 
+source ~/.config/fish/env.fish 2>/dev/null
 source "$HOME/.cargo/env.fish"
 
 # various
