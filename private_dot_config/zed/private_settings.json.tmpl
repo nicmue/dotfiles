@@ -14,6 +14,9 @@
     "metrics": false,
   },
 {{- end }}
+  "toolbar": {
+    "breadcrumbs": true,
+  },
   "document_symbols": "on",
   "hover_popover_enabled": true,
   "hover_popover_delay": 500,
@@ -60,8 +63,8 @@
   },
   "agent_servers": {
     "claude-acp": {
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "language_models": {
     "anthropic": {},
@@ -146,6 +149,15 @@
         },
       },
       "format_on_save": "on",
+    },
+    "TOML": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "taplo",
+          "arguments": ["format", "--colors=never", "-"],
+        },
+      },
     },
   },
   "lsp": {
