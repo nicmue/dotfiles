@@ -16,6 +16,7 @@ end
 # zellij
 abbr -a za 'zellij attach -c'
 abbr -a zam 'zellij attach -c main'
+abbr -a zag 'zellij attach -c gibbs'
 
 set --universal nvm_default_version 24
 
